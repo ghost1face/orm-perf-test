@@ -6,7 +6,6 @@ namespace PerfTest
     [RankColumn]
     [MarkdownExporterAttribute.GitHub]
     [SimpleJob(launchCount: 1, warmupCount: 3, targetCount: 5, invocationCount: 100)]
-    [CoreJob, ClrJob]
     public class ORMTests
     {
         private readonly DapperRepo dapperRepo = new DapperRepo();
